@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <script>
+        var x=document.getElementById("btn");
+        x.addEventListener("click",hello);//句柄
+        x.addEventListener("click",word);
+        x.removeEventListener("click" ,hello);//移除事件
+        function hello(){
+            alert("hello");
+        }
+        function word(){
+            alert("word");
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <button id="btn" onclick="demo()">按钮</button>
+        <button id="btn1" onclick="demo()">按钮</button>
+        <button id="btn2" onclick="demo()">按钮</button>
+    </div>
+    <script>
+        function demo(){
+            alert("hello html事件处理");
+        }
+    </script>
+    <script>
+        var btn1=document.getElementById("btn1");
+        btn1.onclick=function(){alert("hello demo零级处理")};
+    </script>
+    <br>
+    <!-- 适配不同的浏览器版本 -->
+    <script>
+        var btn2=document.getElementById("btn2");
+        if(btn2.addEventListener){
+            btn2.addEventListener("click",demo2);
+        }else if (btn2.attachEvent){
+            btn2.attachEvent("click",demo2);
+        }else{
+            btn2.onclick=demo2();
+        }    
+        function demo2(){
+            alert("hello");
+        }
+    </script>
+</body>
+</html>

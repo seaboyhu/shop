@@ -1,0 +1,21 @@
+td{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    /* padding表示内边距的设置 */
+}
+p{
+    border-radius: 10px; /* 圆角边框 */
+    width: 100px;
+    height: 50px;
+    background-color: lightcoral;
+    text-align: center;
+    border: 2px solid blue;
+}
+.cssid{
+    color: blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 10px 10px 5px brown;/* 边框阴影 */
+}

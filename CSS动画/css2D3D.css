@@ -1,0 +1,38 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}
+.div2{
+    /* 这个是旋转 */
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);/* safari chrome */
+    -ms-transform: rotate(180deg); /* IE*/
+    -o-transform: rotate(180deg); /* opera */
+    -moz-transform: rotate(180deg);/* firefox*/
+}
+.div2{
+    /* 这个是偏移   这是支持的浏览器*/
+    transform:translate(100px,100px) ;
+    -webkit-transform: translate(200px,100px);/* safari chrome */
+    -ms-transform: translate(200px,100px); /* IE*/
+    -o-transform: translate(200px,100px); /* opera */
+    -moz-transform: translate(200px,100px);/* firefox*/
+}
+.div2{
+    /* 这个是缩放 */
+    margin: 200px;
+    transform: scale(1,2);
+    -webkit-transform: scale(1,2);/* safari chrome */
+    -ms-transform: scale(1,2); /* IE*/
+    -o-transform: scale(1,2); /* opera */
+    -moz-transform: scale(1,2);/* firefox*/
+}
+.div2{
+    /* 这个是倾斜 */
+    transform: skew(20deg,20deg);
+    -webkit-transform: skew(20deg,20deg);/* safari chrome */
+    -ms-transform: skew(20deg,20deg); /* IE*/
+    -o-transform: skew(20deg,20deg); /* opera */
+    -moz-transform: skew(20deg,20deg);/* firefox*/
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器2</title>
+    <link rel="stylesheet" href="选择器2.css" type="text/css">
+    <style>
+         /* 简单属性选择 */
+        [title]{
+            color: aqua;
+        }
+        [href="https://www.baidu.com/"]{
+            font-size: 30px;
+        }
+        /* title~表示只要你带title就会对其进行操作 */
+        [title~="title"]{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">hello nihao </div>
+    <p title="tit"> hello </p>
+    <p title="title"> hello </p>
+    <p title="t"> hello </p>
+    <p title="title hello"> hello </p>
+    <a href="https://www.baidu.com/">刘洋广场</a>
+    <p>this is my <strong>web</strong></p>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+        <ol>
+            <li>item11</li>
+            <li>item22</li>
+            <li>item33</li>
+        </ol>
+    </div>
+</body>
+</html>

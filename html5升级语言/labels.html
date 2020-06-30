@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labels</title>
+</head>
+<body>
+    <script>
+        function Validate(){
+            var txtName = document.getElementById("txt_name");
+            var button = document.getElementById("btnValidate");
+            var form =document.getElementById("testform");
+            if(txtName.value.trim()==""){
+                var label =document.createElement("label");
+                label.setAttribute("for" ,"txt_name");
+                form.insertBefore(label,button);
+                txtName.labels[1].innerHTML = "请输入姓名：";
+                txtName.labels[1].setAttribute("style" , "font-size:9px;color:red")
+            }
+        }
+    </script>
+    <form action="" id="testform">
+        <label for="txt_name" id="label">姓名：</label>
+        <input type="text" name="" id="txt_name">
+        <input type="button" name="" id="btnValidate" value="验证" onclick="Validate()">
+    </form>
+</body>
+</html>
+<!-- 在HTML5中，为所有可使用标签的表单元素、button、 select元素等，定义一个
+     labels属性，属性值为一个NodeList对象，代表该元素所绑定的标签元素所构成的
+     集合。-->

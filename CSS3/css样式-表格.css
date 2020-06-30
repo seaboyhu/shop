@@ -1,0 +1,19 @@
+ #tb ,tr,th,td {
+    border:  1px solid blue;
+    /* text-align: center;居中  */
+    background-color: burlywood;
+}
+/*#tb{
+    width: 80px ;
+    height: 40px;
+    border-collapse: collapse;外边框折叠方式
+} */
+#tb th{
+    text-align: right;
+    background-color: cadetblue;
+    color: chocolate;
+}
+#tb tr.alt td{
+    color: black;
+    background-color: burlywood;
+}

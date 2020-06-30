@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var a=["hello", "word"];
+        var b=["hu","xue"];
+        var c=a.concat(b);//将元素合并
+        document.write(c);
+    </script>
+    <br>
+    <hr>
+    <script>
+        var h=["a","c","d","t","b","e"];
+        var u=["5","2","3","1","6","4"];
+        document.write(h.sort());//将元素排序
+        document.write(u.sort());
+    </script>
+    <br>
+    <script>
+        var j=["5","2","3","1","6","4"];//降序
+        document.write(j.sort(function(a,b){
+            return b-a;
+        }))
+    </script>
+    <br>
+    <script>
+        var a=["a","b"];//追加
+        document.write(a.push("c"));
+    </script>
+    <br>
+    <script>
+        var a=["c","b","a"];
+        document.write(a.reverse());//翻转
+    </script>
+</body>
+</html>

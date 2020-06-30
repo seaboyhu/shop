@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8080/test.php">  <!--这个php只是测试，正常的话是jsp文件-->
+        请输入内容:
+        <input type="text" name="part" id="" pattern="[A-Z]{3}"> <!-- pattern="[A-Z]{3}"表示的是大写的A到Z的三个字母，如果符合的话会报错-->
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>
+<!-- 在HTML5中，对input元素使用pattern属性，并且将属性值设为某个格式的正则表
+     达式，在提交时会针对这些进行检查，检查其内容是否符合给定格式。当输入的内
+     容不符合给定格式时，则不允许提交，同时在浏览器中显示信息提示文字，提示输
+    入的内容必须符合给定格式。-->

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formtarget</title>
+</head>
+<body>
+    <form action="" id="testform">
+        <input type="submit" name="s1" value="v1"  id="" formtarget="_blank" formaction="">提交
+        <input type="submit" name="s2" value="v2"  id="" formtarget="_self" formaction="">提交
+        <input type="submit" name="s3" value="v3"  id="" formtarget="_parent" formaction="">提交
+        <input type="submit" name="s4" value="v4"  id="" formtarget="_top" formaction="">提交
+        <input type="submit" name="s5" value="v5"  id="" formtarget="framename" formaction="">提交
+    </form>
+</body>
+</html>
+<!-- 在HTML4中，表单元素具有一个target属性，该属性用于指定在何处打开表单提交
+     后所需要加载的页面。
+     在HTML5中，可以对多个提交按钮分别使用formtarget属性来指定提交后在何处打
+     开所需加载的页面。-->

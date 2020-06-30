@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    function creatobj(name,age,gender){
+        var obj=new Object();
+        obj.name=name;
+        obj.age=age;
+        obj.gender=gender;
+        obj.sayname=function(){
+            alert(this.name);
+        }
+        return obj;
+    }
+    var obj2=creatobj("1",18,"1");
+    var obj3=creatobj("2",20,"0");
+    console.log(obj2);
+    console.log(obj3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

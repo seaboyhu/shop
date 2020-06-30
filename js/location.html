@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="getLoc()">按钮</button>
+    <p id="ptime"></p>
+    <script>
+        function getLoc(){
+            //document.getElementById("ptime").innerHTML=window.location.pathname;//当前的地址
+            //document.getElementById("ptime").innerHTML=window.location.port;//端口号
+            //document.getElementById("ptime").innerHTML=window.location.href;
+            location.assign("https://www.baidu.com/");
+        }   
+    </script>
+</body>
+</html>
+<!-- location.hostname返回web主机的域名
+     location.pathname返回当前页面的路径和文件名
+     location.port返回web主机的端口
+     location.protocol返回所使用的web协议(http:// 或https://)
+     location.href属性返回当前页面的URL
+     location.assign()方法加载新的文档
+ -->

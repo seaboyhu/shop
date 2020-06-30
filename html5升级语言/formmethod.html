@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="testform">
+        <input type="submit" name="s1" value="v1"  id="" formmethod="POST" formaction="">提交
+        <input type="submit" name="s2" value="v2"  id="" formmethod="GET" formaction="">提交
+    </form>
+    <form action="">
+        <input type="text" formenctype="multipart/form-data" name="" id="">
+        <input type="text" formenctype="text/plain" name="" id="">
+        <input type="text" formenctype="application/x-www-form-urlencoded">
+
+    </form>
+</body>
+</html>
+
+<!-- 在HTML4中，一个表单内只能有一个action属性用来对表单内所有元素统一指定提
+     交页面，所以每个表单内页只有一个method属性来统一指定提交方法。在HTML5
+     中，可以使用formmethod属性来对每一个表单元素分别指定不同的提交方法。
+
+    在HTML4中，表单元素具有-个enctype属性，该属性用于指定在表单发送到服务
+    器之前应该如何对表单内的数据进行编码。
+    在HTML5中，可以使用formenctype属性对表单元素分别指定不同的编码方式。-->

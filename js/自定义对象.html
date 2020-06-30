@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 创建对象 -->
+    <script>
+        people = new Object();
+        people.name = "hu";
+        people.age = "22";
+        document.write("name:"+people.name+",age:"+people.age);
+    </script>
+    <br>
+    <script>
+        people ={name:"liu",age:"22"};
+        document.write("name:"+people.name+",age:"+people.age);
+    </script>
+    <br>
+    <!-- 调用函数来创建对象 -->
+    <script>
+        function people(name,age){
+            this._name=name;  //this用来做索引
+            this._age=age;
+        }
+        son =new people("yang",30);
+        document.write("name:"+son._name+",age:"+son._age);
+    </script>
+</body>
+</html>

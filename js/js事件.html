@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件</title>
+    <link rel="stylesheet" href="js事件.css" type="text/css">
+</head>
+<body onload="loadDemo()">
+    <button onclick="demo()">按钮</button>
+    <!-- 点击事件 -->
+    <script>
+        function demo(){
+            alert("hello");
+        }
+    </script>
+    <div class="div" onmouseout="onOver(this)" onmouseover="onOut(this)"></div>
+    <!-- this 是指向当前的函数的 -->
+    <script>
+        function onOver(ooj){
+            ooj.innerHTML="Hello";
+        }
+        function onOut(ooj){
+            ooj.innerHTML="World";
+        }
+    </script>
+    <form action="">
+        <input type="text" onchange="changeDemo(this)" name="" id="">
+        <input type="text" onselect="selsctDemo(this)" name="" id="" onfocus="focusDemo(this)">
+    </form>
+    <script>
+        function changeDemo(bg){
+            alert("内容改变了");
+        }
+    </script>
+    <script>
+        // 填写完数据选中后会改变颜色
+        function selsctDemo(bg){
+            bg.style.background= "red";
+        }
+    </script>
+    <script>
+        function focusDemo(bg){
+            bg.style.background= "blue";
+        }
+    </script>
+    <script>
+        function loadDemo(){
+            alert("网页加载完毕");
+        }
+    </script>
+</body>
+</html>
+<!-- 改变HTML输出流: 注意:绝对不要在文档加载完成之后使用document.write()。这会覆盖该文档 -->
+<!-- onClick 单击事件
+     onMouseOver 鼠标经过事件
+     onMouseOut 鼠标移出事件
+     onChange 文本内容改变事件
+     onSelect 文本框选中事件
+     onFocus 光标聚集事件
+     onBlur 移开光标事件
+     onLoad 网页加载事件
+     onUnload 关闭网页事件 -->

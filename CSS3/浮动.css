@@ -1,0 +1,23 @@
+#fd{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    float: left;
+}
+#sd{
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    float: right;
+}
+#td{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    float: inherit;
+}
+#container{
+    width: 500px;
+    height: 300px;
+    background-color: lightcoral;
+}

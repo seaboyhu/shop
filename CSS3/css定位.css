@@ -1,0 +1,28 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    z-index: 1;
+}
+#position2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    z-index: 2;
+}
+#position3{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    z-index: 3;
+}
+/* z-index 表示那个页面显示在前面(谁的大，谁在前面) */

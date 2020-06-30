@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="2.jpg" id="imgid" alt="">
+    <a href="https://baidu.com/" id="aid">hello baidu</a>
+    <button onclick="demo()">按钮</button>
+    <script>
+        function demo(){
+            document.getElementById("aid").href="http://www.hist.edu.cn/";
+        }
+    </script>
+    <button onclick="demo1()">图片会动哦</button>
+    <script>
+        function demo1(){
+            document.getElementById("imgid").src="1.jpg";
+        }
+    </script>
+</body>
+</html>

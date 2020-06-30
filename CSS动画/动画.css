@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    /* 相对布局  */
+    position: relative;
+    animation: myfirst 5s;
+    -webkit-animation: myfirst 5s;
+}
+@keyframes myfirst{
+    0%{background : red ;left: 0px ;top:0px}
+    19%{background: blue ;left: 100px ;top:0px}
+    29%{background : rgb(16, 155, 63) ;left: 200px ;top:100px}
+    39%{background : rgb(82, 90, 117) ;left: 250px ;top:100px}
+    49%{background : rgb(82, 150, 117) ;left: 350px ;top:0px}
+    59%{background : rgb(180, 90, 117) ;left: 450px ;top:0px}
+    69%{background : rgb(144, 207, 73) ;left: 250px ;top:350px}
+    89%{background : rgb(221, 8, 79) ;left: 225px ;top:400px}
+    100%{background : rgb(223, 17, 154) ;left: 200px ;top:350px}
+}

@@ -1,0 +1,17 @@
+/* body{
+    background-color: gray;
+} 
+p{
+    width: 150px;
+    background-color: green;
+}*/
+body{
+    background-image: url("2.jpg");/* 引进相应的图片 */
+    background-repeat: no-repeat; /* 背景图片是否允许重复（重复的方式）*/
+    background-position: right top; /*right和center  100px 100px*/
+    background-attachment:fixed;/* 不随着页面代码滚动 */ 
+    background-size: 100px 100px;
+}
+/* p{
+    background-image: url("2.jpg");
+} */

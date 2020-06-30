@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单与php交互</title>
+</head>
+<body>
+    <form action="http://localhost:8088/1.php" method="POST"> <!--action: 指定要具体提交到那个服务器上(一般是php运行的网页地址) 这个链接的1.php本机地址为F:\XAMPP\htdocs-->
+
+        <!-- mothod="GET"这个模式下（对应的php也是要写成相应的GET或者POST），密码和账号会显示在网页上；mothod="POST" 则不会（因此更安全）
+             GET可以做资源定位，但是POST不会做资源定位-->
+
+        用户名：
+        <input type="text" name="name">
+        密码:
+        <input type="password" name="password">
+        <br>
+        <input type="submit" value="提交" name="" id="">
+    </form>
+</body>
+</html>

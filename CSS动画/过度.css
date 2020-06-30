@@ -1,0 +1,15 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    transition: width 2s ,height 2s ,transform 2s;
+    /* 延时执行 */
+    transition-delay : 0.5s;
+}
+div:hover{
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+    -webkit-transform : rotate(360deg) ;
+}
+/* 点击图片会自动的旋转360度并扩大两倍 */

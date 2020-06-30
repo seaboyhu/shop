@@ -1,0 +1,22 @@
+body{
+    border: 0;
+}
+.mg{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+
+}
+.container{
+    margin: 100px;
+}
+.bd{
+    border-style: dotted;
+}
+.pd{
+    padding: 100px;
+}
+.content{
+    background-color: cadetblue;
+}

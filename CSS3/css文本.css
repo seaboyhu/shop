@@ -1,0 +1,22 @@
+div{
+    color: red;
+    text-align: left;
+}
+div{
+    text-indent: 0em;
+    padding-left: 2em;
+}
+p{
+    word-wrap : normal;
+    text-shadow: 5px 5px  1px #ff0000;
+    padding-left: 2em;
+}
+#p1{
+    text-transform: capitalize;
+}/* 首字母大写 */
+#p2{
+    text-transform: lowercase;
+} /*字母都小写*/
+#p3{
+    text-transform: uppercase;
+} /*全部大写*/

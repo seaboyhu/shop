@@ -1,0 +1,24 @@
+ a:link{
+    color: lightseagreen;
+    background-color: navajowhite;
+    text-decoration: none; /*去掉下划线 */
+}
+a:visited{
+    color: lime;
+}
+a:hover{
+    color: mediumblue;
+}
+a:active{
+    color: mediumslateblue;
+} 
+ul li{
+    list-style-type: square;
+    list-style-image: url();
+}
+ul.ul1{
+    list-style-position: inside;
+}
+ul.ul2{
+    list-style-position: outside;
+}

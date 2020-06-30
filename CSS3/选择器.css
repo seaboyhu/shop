@@ -1,0 +1,30 @@
+/* *{}为通配符 */
+*{
+    margin: 0px;
+    padding: 0px;
+    color: red;
+}
+h1,h2{
+    font-size: 50px;
+}
+p{
+    color: rgb(20, 64, 209);
+}
+.div{
+    color:blue;
+}
+a.div{
+    color: seagreen;
+}
+.p1{
+    color: tomato;
+}
+.p2{
+    
+    font-size: 45px;
+}
+/* .p1和.p2之间不带空格 */
+.p1.p2{
+    /* 斜体 */
+    font-style: italic;
+}

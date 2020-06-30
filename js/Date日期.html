@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="startTime()">
+    <!-- <script>
+        var date = new Date();
+        //document.write(date);//获取当地时间
+        //document.write(date.getFullYear());//获取年
+        //document.write(date.getTime());//获取时间戳
+        /*date.setFullYear(2020,1,1);
+        document.write(date);自己设置的时间*/
+    </script> -->
+    <script>
+        function startTime(){
+            var today = new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById("timetxt").innerHTML=h+":"+m+":"+s;//自己可以调用自己的函数
+            t = setTimeout(function(){
+                startTime();
+            },1000);
+        }
+        function checkTime(i){//这个地方的i一定要填写
+            if(i<10){
+                i="0"+i;
+            }
+            return i;
+        }
+    </script>
+    <div id="timetxt"></div>
+</body>
+</html>

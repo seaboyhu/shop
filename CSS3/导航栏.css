@@ -1,0 +1,25 @@
+ul{
+    width: 250px;
+    height: 200px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+a:link,a:visited{
+    font-weight: 200;
+    text-decoration: none;
+    /* display: block; */
+    background-color: chartreuse;
+    color: red;
+    text-align: center;
+}
+a:active,a:hover{
+    background-color: slateblue;
+}
+li{
+    /* 一行摆放 */
+    display: inline;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
